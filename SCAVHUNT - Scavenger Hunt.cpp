@@ -91,11 +91,11 @@ void bfs_topo(vector<int> adj[])
 int main()
 {
 	int t;
-    cin>>t;
+    	cin>>t;
 	for(int ii=1;ii<=t;ii++)
 	{
-	    memset(in_degree,0,sizeof(in_degree));
-	    vector<int> adj[10001];
+	    	memset(in_degree,0,sizeof(in_degree));
+	    	vector<int> adj[10001];
 		int tot=1;
 		map<string,int> name;
 		map<int,string> ver;
@@ -104,8 +104,8 @@ int main()
 		for(int i=1;i<n;i++)
 		{
 			int u,v;
-		    string uu,vv;
-		    cin>>uu>>vv;
+		    	string uu,vv;
+		    	cin>>uu>>vv;
 			if(!name.count(uu))
 			{
 				name[uu] = tot;
