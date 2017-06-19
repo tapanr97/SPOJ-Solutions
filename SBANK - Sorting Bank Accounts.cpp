@@ -55,24 +55,24 @@ int main()
 		vector<string> v;
 		map<string,int> mymap;
 		int n;
-    scanf(" %d ",&n);
+    		scanf(" %d ",&n);
 		for(int i=0;i<n;i++)
 		{
-        char st[33];
-    		cin.getline(st,33);
-    		auto it = mymap.find(st);
-    		if(it==mymap.end())
-    		{
-    			v.pb(st);
-    			mymap.insert(mp(st,1));
-    		}
-    		else
-    		{
-    			int f = it->second;
-    			f++;
-    			mymap.erase(st);
-    			mymap.insert(mp(st,f));
-    		}
+			char st[33];
+			cin.getline(st,33);
+			auto it = mymap.find(st);
+			if(it==mymap.end())
+			{
+				v.pb(st);
+				mymap.insert(mp(st,1));
+			}
+			else
+			{
+				int f = it->second;
+				f++;
+				mymap.erase(st);
+				mymap.insert(mp(st,f));
+			}
 		}
 		sort(v.begin(),v.end());
 		for(int i=0;i<v.size();i++)
@@ -82,5 +82,5 @@ int main()
 		}
 		cout<<endl;
 	}
-    return 0;
+    	return 0;
 }
