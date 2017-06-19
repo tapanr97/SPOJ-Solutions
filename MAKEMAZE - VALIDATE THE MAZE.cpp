@@ -119,11 +119,11 @@ void bfs(int i,int j,char mat[][21])
 			int yy = pp.S;
 			if(xx>=1 && xx<=m && yy>=1 && yy<=n)
 			{
-    			if(!vis[xx][yy] && mat[xx][yy]=='.')
-    			{
-    				vis[xx][yy] = true;
-    				q.push(mp(xx,yy));
-    			}
+				if(!vis[xx][yy] && mat[xx][yy]=='.')
+				{
+					vis[xx][yy] = true;
+					q.push(mp(xx,yy));
+				}
 			}
 		}
 	}
