@@ -85,11 +85,11 @@ int main()
             
 			int dis[10005];
 			bool vis[10005];
-            for(int j=0;j<10005;j++)
-            {
-                dis[j]=INF;
-                vis[j]=false;
-            }
+		    	for(int j=0;j<10005;j++)
+		    	{
+				dis[j]=INF;
+				vis[j]=false;
+		    	}
 			dis[ue] = 0;
 			multiset<pair<int,int>> s;
 			s.insert(mp(0,ue));
