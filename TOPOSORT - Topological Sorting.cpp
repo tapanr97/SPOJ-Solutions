@@ -83,7 +83,7 @@ int main()
 		in(u);
 		in(v);
 		adj[u].pb(v);
-	    in_degree[v]++;
+	    	in_degree[v]++;
 	}
 
 	for(int i=1;i<=n;i++)
@@ -99,5 +99,5 @@ int main()
 	}
 	for(int i=0;i<path.size();i++)
 		printf("%d ",path[i]);
-    return 0;
+   	return 0;
 }
