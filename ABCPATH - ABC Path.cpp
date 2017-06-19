@@ -99,7 +99,6 @@ int w,h;
 int cnt = 0;
 void bfs(int i,int j,char mat[][51])
 {
-
 	vis[i][j] = true;
 	dis[i][j] = 1;
 	queue<pair<int,int>> q;
@@ -130,7 +129,7 @@ void bfs(int i,int j,char mat[][51])
 				{
 					vis[xx][yy] = true;
 					q.push(mp(xx,yy));
-                    dis[xx][yy] = max(dis[xx][yy],dis[x][y]+1);
+                    			dis[xx][yy] = max(dis[xx][yy],dis[x][y]+1);
 				}
 			}
 		}
