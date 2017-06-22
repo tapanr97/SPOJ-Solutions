@@ -169,12 +169,12 @@ int solve(int x)
 
 int main()
 {
-    inpos(n);
+	inpos(n);
 	for(int i=0;i<n-1;i++)
 	{
 		int u,v;
-        inpos(u);
-        inpos(v);
+       		inpos(u);
+        	inpos(v);
 		g[u].insert(v);
 		g[v].insert(u);
 	}
@@ -183,12 +183,12 @@ int main()
 	decompose(1,-1);
 
 	int q;
-    inpos(q);
+    	inpos(q);
 	while(q--)
 	{
 		int t,x;
-        inpos(t);
-        inpos(x);
+        	inpos(t);
+        	inpos(x);
 		if(t==0)
 		{
 			white[x] = !white[x];
