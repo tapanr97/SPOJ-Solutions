@@ -117,8 +117,8 @@ lli solve(int ind,int es,int os,int tight,vector<int> a)
 		else
 		    return 0;
 	}
-    if(dp[ind][es][os][tight]!=-1)
-        return dp[ind][es][os][tight];
+    	if(dp[ind][es][os][tight]!=-1)
+        	return dp[ind][es][os][tight];
 	lli ans = 0;
 	int lim = (tight==1) ? a[ind] : 9;
 	for(int i=0;i<=lim;i++)
@@ -134,9 +134,9 @@ lli solve(int ind,int es,int os,int tight,vector<int> a)
 
 int main()
 {
-    int t;
-    si(t);
-    sieve();
+    	int t;
+    	si(t);
+    	sieve();
 	while(t--)
 	{
 		lli a,b;
