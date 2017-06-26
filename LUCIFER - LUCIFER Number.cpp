@@ -110,9 +110,9 @@ lli solve(int ind,int es,int os,int tight,vector<int> a)
 {
 	if(ind==-1)
 	{
-	    if(es<=os)
-	        return 0;
-	    else if(prime[es-os])
+	    	if(es<=os)
+	            return 0;
+	    	else if(prime[es-os])
 		    return 1;
 		else
 		    return 0;
@@ -125,7 +125,7 @@ lli solve(int ind,int es,int os,int tight,vector<int> a)
 	{
 	    if(ind%2==0)
     		ans += solve(ind-1,es,os+i,(tight==1 && i==a[ind]) ? 1 : 0,a);
-    	else
+    	    else
     		ans += solve(ind-1,es+i,os,(tight==1 && i==a[ind]) ? 1 : 0,a);    	
 	}
 	return dp[ind][es][os][tight] = ans;
