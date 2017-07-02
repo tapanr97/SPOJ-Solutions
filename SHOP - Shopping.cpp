@@ -86,7 +86,7 @@ void dijkstra(int si,int sj,char a[][26])
 	ss.insert(mp(0,mp(si,sj)));
 	while(!ss.empty())
 	{
-	    pair<int,pair<int,int>> tmp = *ss.begin();
+	    	pair<int,pair<int,int>> tmp = *ss.begin();
 		pair<int,int> p = tmp.S;
 		int x = p.F;
 		int y = p.S;
@@ -109,9 +109,9 @@ void dijkstra(int si,int sj,char a[][26])
 				{
 					int w;
 					if(a[xx][yy]!='D')
-    					w = a[xx][yy]-'0';
-    				else
-    				    w = 0;
+    						w = a[xx][yy]-'0';
+    					else
+    				    		w = 0;
 					if(dis[xx][yy]>dis[x][y]+w)
 					{
 						dis[xx][yy] = dis[x][y]+w;
